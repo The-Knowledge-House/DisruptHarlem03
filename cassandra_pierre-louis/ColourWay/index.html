@@ -1,44 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>ColourWay</title>
+  <title>New Home Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-
 <style>
 
-
-body {
-  background-image: url("https://experiencesandeyebrows.files.wordpress.com/2015/09/travel-photo.jpeg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: transparent;
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #73C6B6;
 }
 
-
-body {
-  color: white;
+.jumbotron { 
+    background-color: #73C6B6; /* Orange */
+    color: #73C6B6;
 }
 
-/* .jumbotron { 
-    background-color: #ffffff; /* White 
-    color: black;
-} */
+.bg-grey {
+    background-color: #f6f6f6;
+}
 
-h1 {     
- font-size: 750%;     
-} 
+.jumbotron {
+    background-color: #73C6B6;
+    color: #fff;
+    padding: 100px 25px;
+}
 
-h1 {
-  text-align: center
+.container-fluid {
+    padding: 60px 50px;
 }
 
 .navbar-default {
@@ -46,22 +42,66 @@ h1 {
     border-color: #73C6B6;
 }
 
-.bg-grey {
-    background-color: #f6f6f6;
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
 }
 
-
-.logo {
-    font-size: 200px;
+.jumbotron {
+    font-family: Montserrat, sans-serif;
 }
-/*@media screen and (max-width: 768px) {
-    .col-sm-4 {
-        text-align: center;
-        margin: 25px 0;R
-    }*/
+
+.navbar {
+    font-family: Montserrat, sans-serif;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+$(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+      $(this).addClass("slide");
+    }
+  });
+});
 
 </style>
-
 
 
 
@@ -78,127 +118,239 @@ h1 {
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li>
-        	<a href="index.html">Home</a></li>
+          <a href="index.html">Home</a></li>
         <li>
-        	<a href="features.html">Features</a></li>
+          <a href="features.html">Features</a></li>
         <li>
-        	<a href="profile.html">Create A Profile</a></li>
+          <a href="profile.html">Create A Profile</a></li>
         <li>
-        	<a href="about.html">About</a></li>
+          <a href="about.html">About</a></li>
         <li>
-        	<a href="faq.html">FAQ</a></li>
+          <a href="faq.html">FAQ</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
 
- <!--<div class="jumbotron bg-white text-center">
-  <h1>ColourWay</h1> 
-  <p>See The World In Colour!</p> 
-</div>-->
+    // Prevent default anchor click behavior
+    event.preventDefault();
 
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+Try it Yourself »
+ 
 <body>
   <i class="fa fa-facebook-official" aria-hidden="true"></i>
   <i class="fa fa-flickr" aria-hidden="true"></i>
   <i class="fa fa-twitter" aria-hidden="true"></i>
   <i class="fa fa-vimeo" aria-hidden="true"></i>
   <i class="fa fa-youtube" aria-hidden="true"></i>
+  <i class="fa fa-instagram" aria-hidden="true"></i>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<h1>ColourWay</h1>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="container-fluid bg-img1">
-  <div class="row">
-  	<div class="col-sm-10">
-      <h3>ColourWay is a mobile app that allows</h3>
-      <h3>you to openly share your travel experiences and</h3>
-      <h3>embrace your identity in the process.</h3> 
-      <button class="btn btn-default btn-lg">Learn More</button>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-   </div>
-   <div class="col-sm-10">
-   </div>
-  </div>
+<div class="jumbotron text-center">
+  <h1>ColourWay</h1> 
+  <p>See the World in Colour!</p> 
+  <form class="form-inline">
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>
+</div>
 
 
+<div class="container-fluid">
+  <h2>About ColourWay</h2>
+  <h4>ColourWay is a mobile app that allows</h4>
+  <h4>you to openly share your travel experiences</h4>
+  <h4>and embrace your identity in the process.</h4> 
+  <button class="btn btn-default btn-lg">Get in Touch</button>
+</div>
 
-
-   <div class="row">
-    <div class="col-sm-12">
-        </div>
-    <div class="col-sm-12">
-      <h2>Get The App</h2>
+<div class="container-fluid bg-grey">
+<div class="theme-table-image col-sm-6">
+  <img src=>
+</div>
+  <div class="theme-table-image col-sm-6">
+   <h2>Get The App</h2>
       <br>
-      <h3>Available now on any mobile platform.</h3>
-      <h3>Download now to see the world with us!</h3> 
+      <h4>Available now on any mobile platform.</h4>
+      <h4>Download now to see the world with us!</h4> 
+      <br>
+      <br>
       <img src="https://instagramstatic-a.akamaihd.net/h1/images/appstore-install-badges/english_get.png/74c874cf7dc5.png" height="40px" width="136px">
       <img src="https://instagramstatic-a.akamaihd.net/h1/images/appstore-install-badges/badge_ios_english-en.png/4b70f6fae447.png" height="43.33px" width="120.34">
-    </div> 
- </div>
+  </div>
 </div>
+
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
 <br>
 <br>
 <br>
 <br>
 <br>
 <br>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
+    </div>
+    <div class="item">
+      <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
+    </div>
+    <div class="item">
+      <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> 
 <br>
 <br>
 <br>
-    <div class="container-fluid bg-white text-center">
-      <h2>Let's Stay Connected!</h2>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-    <div class="row">
-      <div class="col-sm-4">
-       <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
-       </div>
+<div class="container-fluid text-center">
+  <h2>Let's Stay Connected!</h2>
+  <br>
+  <h4>Stay up-to- date with product development and news!</h4>
+  <br>
+  <br>
+  <br>
+  <div class="row">
     <div class="col-sm-4">
-       <i class="fa fa-twitter fa-4x aria-hidden="true"></i>
+      <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
+      <h4>Facebook</h4>
+      <p>Like us on Facebook!</p>
     </div>
     <div class="col-sm-4">
-      <i class="fa fa-youtube fa-4x" aria-hidden="true"></i>
+  <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
+      <h4>Instagram</h4>
+      <p>Double tap us on Instagram!</p>
+    </div>
+    <div class="col-sm-4">
+  <i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
+      <h4>Twitter</h4>
+      <p>Follow us on Twitter!</p>
     </div>
     </div>
+    <br><br>
+
+  <div class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> New York, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +1 6464030067</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> cassandraplouis@gmail.com</p> 
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+<!-- Set height and width with CSS -->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+function initialize() {
+var mapProp = {
+center:myCenter,
+zoom:12,
+scrollwheel:true,
+draggable:true,
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+position:myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<div id="about" class="container-fluid">
+<div id="services" class="container-fluid">
+<div id="portfolio" class="container-fluid">
+<div id="pricing" class="container-fluid">
+<div id="contact" class="container-fluid">
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p><b>Copyright</b> <i class="fa fa-copyright" aria-hidden="true"></i>
+ <em>ColourWay</em></p> 
+</footer>
+
 
 <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
-
-
 
 
 
