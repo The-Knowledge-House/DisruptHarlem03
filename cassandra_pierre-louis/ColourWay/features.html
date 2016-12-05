@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="{{ asset('css/screen.css') }}" type="text/css" rel="stylesheet">
 </head>
 
 
@@ -18,10 +19,31 @@ body {
   color: black;
 }
 
-.jumbotron {
-    background-image: url("https://media-public.canva.com/MABkkWjeXJU/1/screen.jpg" height:"400px" width:"550px")
-    padding: 100px 25px;
-}
+/*.jumbotron {
+	position: relative;
+	background: #000 url('../features_jumb.jpg')
+	width: 100%
+	height: 100%
+	background-size: cover;
+	background-color: transparent;
+	overflow: hidden;
+}*/
+
+/*.jumbotron {
+	position: relative;
+   	background: url("https://document-export.canva.com/DACGgeGPz1E/7/preview/0001-42.png") no-repeat center center;
+	width: 400;
+	height: 100%;
+	background-size: cover;
+}*/
+
+/*.bg-img2 {
+    background-image:"features_jumb.jpg"
+    height:300px;
+    background-repeat: no-repeat;
+    background-size: auto  100%;
+    border-bottom:1px solid #ff6a00;
+}*/
 
 .navbar-default {
     background-color: #f2bb43;
@@ -40,13 +62,24 @@ body {
     background-color: #f6f6f6;
 }
 
-.bg-img1 {
+/*.img {
+	max-width: 100%;
+	height: auto;
+}
+
+.item {
+	width: 120px;
+	min-height: 120px;
+	max-height:auto;
+	float: left;
+	margin:3px;
+	padding:3px;
+}*/
+
+/*.bg-img1 {
 	background-image: url('https://media-public.canva.com/MABkkWjeXJU/1/screen.jpg')
-}
+}*/
 
-.bg-img2 {
-
-}
 
 .logo {
     font-size: 200px;
@@ -94,9 +127,18 @@ body {
   <i class="fa fa-vimeo" aria-hidden="true"></i>
   <i class="fa fa-youtube" aria-hidden="true"></i>
 
-<div class="jumbotron bg-img1">
-</div>
+<!--<div class="item">
+ <img src= "...//features_jumb.jpg">
+</div-->
 
+<!--<div class="widewrapper main">
+      <img src="...//features_jumb.jpg" class="img-responsive">
+</div>-->
+
+<!--Features Image -->
+<div>
+	<img src="https://document-export.canva.com/DACGgeGPz1E/7/preview/0001-42.png" style="height: 500px;width: 100%;">
+</div>
 
 <div class="container-fluid text-center">
   <br>
@@ -136,3 +178,5 @@ body {
     </div>
   </div>
 </div>
+</body>
+</html>
