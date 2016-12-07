@@ -30,20 +30,25 @@
         margin-top:12%;
         border-radius: 5px;
        }
-
        #close{
         position: absolute;
         right: -5px;
         top:10px;
        }
-
-    }
-
-    .glyphicon.hover{
-        color: red;
-    }
-
-
+         #modal2{
+        width: 400px;
+        background: #CACACA;
+        height: 300px;
+        box-shadow: 8px 8px 10px 4px;
+        margin: 0 auto;
+        margin-top:12%;
+        border-radius: 5px;
+       }
+       #close{
+        position: absolute;
+        right: -5px;
+        top:10px;
+       }
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -137,15 +142,37 @@
         </div>
         <!-- /.container -->
     </nav>
-    <nav id="subNav" class="navbar navbar-default navbar-lower">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
-            </div>
+
+   <section id="modal" class="modal fade">
+
+   <div class="modal-body">
+   <form action="login.php" method="post" role="form">
+
+   <span id="close" onclick="close();" class="glyphicon glyphicon-remove pull-right"></span>
+
+   <div class="form-group">
+   <label for="email">Email Address</label>    
+   <input type="email" class="form-control" id="id" placeholder="Enter Email">
+   </div><!--Form group-->
+
+   <div class="form-group">
+   <label for="email">Password</label>    
+   <input type="password" class="form-control" id="id" placeholder="Password">
+   </div><!--Form group-->
+       
+   <div class="checkbox">
+       <label>
+           <input type="checkbox">Remember Me
+       </label>
+   </div><!--Checkbox-->
+
+   <button type"submit" class="btn btn-default">Submit</button>
+
+   <p>Don't have an account?<button type="button" class="btn btn-default" href="signup.html">Sign Up!</button></p>
+ 
+   </form><!--Form-->
+   </div><!--Modal Body-->
+   </section><!--Modal-->
 
     <!-- Page Content -->
     <div class="container">
@@ -156,11 +183,6 @@
             <div class="col-lg-12">
                 <h1 class="page-header">Educators
                 </h1>
-                <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
-                    </li>
-                    <li class="active">About</li>
-                </ol>
             </div>
         </div>
         <!-- /.row -->
@@ -171,13 +193,26 @@
                 <img src="http://www.theinclusionsolution.me/wp-content/uploads/2013/04/black-student-hand-raised-in-class.jpg" height="490px" width="500px">
             </div>
             <div class="col-md-6">
-                <h2>Educators</h2>
+                <h2><strong>Educators</strong></h2>
                 <button type="submit" id="newsletter" class="btn btn-default" href="newsletter.html">Sign Up For Our Newsletter</button>
               </p>
+              <br>
+              <br>
+                <h3><em>Sign up now and you'll receive:</em></h3>
+                <br>
+                    <ul><h4>Discounts on educator events</h4></ul>
+                <br>
+                    <ul><h4>Monthly newsletter that includes updates on new educational developments and new product developments.</h4></ul>
+                <br>
+                    <ul><h4>Automatic access to our virtual educators workshops</h4></ul>
+                <br>
+                    <ul><h4>24/7 chat assistance</h4></ul>
+            </div>
+
             </div>
         </div>
-        </section>
-    <section id="modal" class="modal fade">
+        
+    <section id="modal2" class="modal fade">
 
    <div class="modal-body">
    <form action="login.php" method="post" role="form">
@@ -199,30 +234,54 @@
    <input type="email" class="form-control" id="id" placeholder="Enter Email">
    </div><!--Form group-->
 
-       
-   <div class="checkbox">
-       <label>
-           <input type="checkbox">Remember Me
-       </label>
-   </div><!--Checkbox-->
-
    <button type"submit" class="btn btn-default">Submit</button>
-
-   <p>Don't have an account?<button type="button" class="btn btn-default" href="signup.html">Sign Up!</button></p>
  
    </form><!--Form-->
    </div><!--Modal Body-->
-   </section><!--Modal--></section>
+   </section><!--Modal-->
+
+<!--<div class="col-md-6">
+   <h3><strong>Sign up now and you'll get:</strong></h3>
+        <br>
+        <ul><h4>Discounts on educator events</h4></ul>
+        <br>
+        <ul><h4>Monthly newsletter that includes updates and new product developments.</h4></ul>
+</div>-->
+
+
+
+<br>
+<br>
+<br>
+<br>
+   <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright Earth Adventures&copy; 2016</p>
+                </div>
+            </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
    <script>
-   $("#newsletter").on('click', function(){
+    $("#login").on('click', function(){
         $("#modal").modal({show:true});
     }); //Show Modal
-
     $("#close").on('click', function(){
         $("#modal").modal('hide');
-
     });
-
+    $("#newsletter").on('click', function(){
+        $("#modal2").modal({show:true});
+    }); //Show Modal
+    $("#close").on('click', function(){
+        $("#modal2").modal('hide');
+    });
     </script>
 
         </body>
