@@ -14,7 +14,27 @@
 
 <style>
 
-body {
+#bg {
+  position: fixed; 
+  top: -150%; 
+  left: -150%; 
+  width: 200%; 
+  height: 200%;
+}
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+  color: transparent;
+}
+
+
+/*body {
   background-image-src:("img/faq_one.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -71,9 +91,15 @@ body {
   </div>
 </nav>
 
-<div class="container-fluid">
+
+<div id="bg">
+  <img src="img/faq_one.jpg" alt="">
+</div>
+
+<div class="container-fluid bg-white">
   <div class="row">
     <div class="col-sm-8">
+    <div style="color: white">
       <h1><b>Frequently Asked Questions</b></h1>
       <br>
       <br>
