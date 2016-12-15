@@ -128,16 +128,16 @@ a:hover {
 	line-height: 20px;
 	padding: 15px 35px;
 	height: 50px;
-	border: 2px solid #3eb0f7;
-	background: #3eb0f7;
+	border: 2px solid #FFC300;
+	background: #FFC300;
 	transition: all 0.4s;
-	color: white;
+	color: #FFC300;
 	border-radius: 100px;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-	border: 2px solid #3eb0f7;
+	border: 2px solid #00cccc;
 	background: transparent;
-	color: #3eb0f7;
+	color: #FFC300;
 }
 .btn-secondary {
 	font-size: 20px;
