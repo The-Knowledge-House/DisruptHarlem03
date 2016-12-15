@@ -84,18 +84,18 @@ a:hover {
 }
 .navbar-default {
 	background: rgba(255, 255, 255, 0.95);
-	box-shadow: 0px 0.5px 2px #cecece;
+	box-shadow: 0px 0.5px 2px #FFC300;
 }
 .navbar-default .navbar-brand {
-    padding: 7px;
+    padding: 3px;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #777;
+    color: #FFC300;
 	font-weight: 500;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #3eb0f7;
+    color: #FFC300;
 }
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
@@ -316,7 +316,7 @@ a:hover {
 	margin-top: 20px;
 }
 .subscribe {
-	color: #fff;
+	color: #05c196;
 }
 .subscribe p {
 	margin: 30px auto 30px;
@@ -339,14 +339,14 @@ a:hover {
 	border-radius: 4px 0 0 4px;
 	border: none;
 	background-color: rgba(255, 255, 255, 0.6);
-	color: #333;
+	color: #05c196;
 	font-size: 1.2em;
 	height: 55px;
 }
 .subscribe-form button {
 	border-radius: 0 4px 4px 0;
-	background-color: #3eb0f7;
-	color: #ffffff;
+	background-color: #05c196;
+	color: #05c196;
 	font-size: 1em;
 	line-height: 52px;
 	position: absolute;
@@ -359,10 +359,11 @@ a:hover {
 }
 .subscribe-form .btn {
 	height: 55px;
+	color: #05c196
 }
 .subscribe-form .btn:hover {
-	background-color: #1f96e0;
-	color: #fff;
+	background-color:#05c196;
+	color:#05c196;
 	-webkit-transition: all .8s ease;
 	transition: all .8s ease;
 }
@@ -581,8 +582,8 @@ a:hover {
 #contact-form .btn {
 	height: 55px;
 	width: 100%;
-	background-color: #3eb0f7;
-	color: #ffffff;
+	background-color: #05c196;
+	color: #05c196;
 	font-size: 17px !important;
 	line-height: 18px;
 	padding: 0 33px;
@@ -593,7 +594,7 @@ a:hover {
 	transition: all .8s ease;
 }
 #contact-form .btn:hover {
-	background-color: #1f96e0;
+	background-color: #05c196;
 	-webkit-transition: all .8s ease;
 	transition: all .8s ease;
 }
@@ -618,13 +619,13 @@ a:hover {
 	color: #3eb0f7;
 	border-radius: 50%;
 	background: #fff;
-	border: solid 1px #3eb0f7;
+	border: solid 1px #05c196;
 	-webkit-transition: all .8s ease;
 	transition: all .8s ease;
 }
 .social li a:hover {
 	color: #fff;
-	background: #3eb0f7;
+	background: #05c196;
 }
 #shortcode-basic {
 	padding: 70px 0 10px;
@@ -651,7 +652,7 @@ a:hover {
 	padding: 50px 0 10px;
 }
 .social-icons i {
-	color: #3eb0f7;
+	color: #05c196;
 	font-size: 30px;
 	line-height: 40px
 }

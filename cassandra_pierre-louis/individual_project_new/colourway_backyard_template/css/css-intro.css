@@ -101,7 +101,7 @@ a:hover {
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
 	background: transparent;
-    color: #3eb0f7;
+    color: #05c196;
 }
 .site-name img{
 	width: 150px; 
@@ -140,11 +140,11 @@ a:hover {
 	border: 2px solid #3eb0f7;
 	background: transparent;
 	transition: all 0.4s;
-	color: #3eb0f7;
+	color: #05c196;
 	border-radius: 100px;
 }
 .action-glass:hover {
-	background: #3eb0f7;
+	background: #05c196;
 	color: white;
 }
 .action-blue {
@@ -154,15 +154,15 @@ a:hover {
 	line-height: 20px;
 	padding: 15px 35px;
 	height: 50px;
-	border: 2px solid #3eb0f7;
-	background: #3eb0f7;
+	border: 2px solid #05c196;
+	background: #05c196;
 	transition: all 0.4s;
 	color: white;
 	border-radius: 100px;
 }
 .action-blue:hover {
 	background: transparent;
-	color: #3eb0f7;
+	color: #05c196;
 }
 .head-btn {
 	margin-bottom: 100px;
@@ -181,7 +181,7 @@ a:hover {
 	margin-right: 10px;
 }
 .option:hover {
-	color: #3eb1f8;
+	color: #05c196;
 }
 
 .signup-header {
@@ -211,7 +211,7 @@ a:hover {
 	border-radius: 0;
 	height: 55px;
 	width: 100%;
-	background-color: #3eb0f7;
+	background-color: #05c196;
 	color: white;
 	font-size: 17px !important;
 	padding: 0 33px;
@@ -221,7 +221,7 @@ a:hover {
 	transition: all .8s ease;
 }
 .form-header .btn:hover {
-	background-color: #1f96e0;
+	background-color: #05c196;
 	-webkit-transition: all .8s ease;
 	transition: all .8s ease;
 }
@@ -256,7 +256,7 @@ a:hover {
 	border-radius: 0;
 	height: 55px;
 	width: 100%;
-	background-color: #3eb0f7;
+	background-color: #05c196;
 	color: white;
 	font-size: 17px !important;
 	padding: 0 33px;
@@ -266,7 +266,7 @@ a:hover {
 	transition: all .8s ease;
 }
 .form-registration .btn:hover {
-	background-color: #1f96e0;
+	background-color: #05c196;
 	-webkit-transition: all .8s ease;
 	transition: all .8s ease;
 }
@@ -302,11 +302,11 @@ a:hover {
 	border: solid 2px #3eb0f7;
 	background: white;
 	transition: all 0.4s;
-	color: #3eb0f7;
+	color: #05c196;
 	border-radius: 100px;
 }
 .btn-action:hover {
-	background: #3eb0f7;
+	background: #05c196;
 	color: white;
 }
 .btn-section {
