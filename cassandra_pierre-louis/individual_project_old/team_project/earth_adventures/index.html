@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Earth Adventures</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <style>
+       #modal{
+        width: 400px;
+        background: #CACACA;
+        height: 300px;
+        box-shadow: 8px 8px 10px 4px;
+        margin: 0 auto;
+        margin-top:12%;
+        border-radius: 5px;
+       }
+
+       #close{
+        position: absolute;
+        right: -5px;
+        top:10px;
+       }
+
+    }
+
+    .glyphicon.hover{
+        color: red;
+    }
+
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Earth Adventures</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Games <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="games-earth.html">Earth</a>
+                            </li>
+                            <li>
+                                <a href="games-the-moon.html">The Moon</a>
+                            </li>
+                            <li>
+                                <a href="games-the-sun.html">The Sun</a>
+                            </li>
+                            <li>
+                                <a href="games-the-milkyway.html">The Milky way (coming soon)</a>
+                            </li>
+                        </ul>
+                    </li>
+                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-home-1.html">Beginner</a>
+                            </li>
+                            <li>
+                                <a href="blog-home-2.html">Intermediate</a>
+                            </li>
+                            <li>
+                                <a href="blog-post.html">Expert</a>
+                            </li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="full-width.html">Parents</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Educators <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="educators.html">Educators</a>
+                            </li>
+                            <li>
+                                <a href="profile.html">Profile</a>
+                            </li>
+                            <li>
+                                <a href="curriculums.html">Curriculums</a>
+                            </li>
+                            <li>
+                                <a href="lesson-plans.html">Lesson Plans</a>
+                            </li>
+                            <li>
+                                <a href="resources.html">Resources</a>
+                            </li>
+                        </ul>
+                    </li> 
+                    <button type="button" id="login" class="btn btn-default navbar-btn "><i class="fa fa-user"></i> Sign in</button>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+   
+   <section id="modal" class="modal fade">
+
+   <div class="modal-body">
+   <form action="login.php" method="post" role="form">
+
+   <span id="close" onclick="close();" class="glyphicon glyphicon-remove pull-right"></span>
+
+   <div class="form-group">
+   <label for="email">Email Address</label>    
+   <input type="email" class="form-control" id="id" placeholder="Enter Email">
+   </div><!--Form group-->
+
+   <div class="form-group">
+   <label for="email">Password</label>    
+   <input type="password" class="form-control" id="id" placeholder="Password">
+   </div><!--Form group-->
+       
+   <div class="checkbox">
+       <label>
+           <input type="checkbox">Remember Me
+       </label>
+   </div><!--Checkbox-->
+
+   <button type"submit" class="btn btn-default">Submit</button>
+
+   <p>Don't have an account?<button type="button" class="btn btn-default" href="signup.html">Sign Up!</button></p>
+ 
+   </form><!--Form-->
+   </div><!--Modal Body-->
+   </section><!--Modal-->
+
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('images/cp_fishtank.jpg');"></div>
+                <div class="carousel-caption" >
+                    <h2>Top Rated Game</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('images/science_kids.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Popular Projects</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('images/space_game.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Coming Soon</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Begin your Earth Adventure! 
+                </h1>
+                <p>
+                   Welcome to Earth Adventures, where learining about our world is fun and interactive. Choose from games, projects and lessons that will help you understand the most interesting parts of our world. In the games section, you can travel to the far corners of the world and learn specific scientific phenomena from these locations. Remember, when doing projects, <b>always</b> be sure to have a parent or guardian with you. Most importantly, enjoy your Earth Adventure!
+                </p>
+            </div>
+
+            <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Popular</h2>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="images/cp_fishtank-thumbnail.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="images/earth_game.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="images/moon_game.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="images/penguin_cart.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="images/penguin_game.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+        </div>
+        <hr>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><a class="about" href="#about.html"> About</a></h4>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li><a href="about.html#team">Team</a></li>
+                            <li><a href="about.html#customers">Customers</a></li>
+                            <li><a href="about.html#contact">Contact</a></li>
+                            <li><a href="about.html#help">Help</a></li>
+                            <li><a href="about.html#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><a class="approach">Approach</a></h4>
+                    </div>
+                    <div class="panel-body">
+                    <ul>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Results</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><a class="partners"> Resources</a></h4>
+                    </div>
+                        <ul>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        
+
+        <!-- Call to Action Section -->
+        <div class="well">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>Earth Adventures focuses on teaching children to learn about the earth in new and fun ways. We work with parents and educators to provide the best comprehensive and entertaining education to children who use our program.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Earth Adventures 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    });
+
+    $("#login").on('click', function(){
+        $("#modal").modal({show:true});
+    }); //Show Modal
+
+    $("#close").on('click', function(){
+        $("#modal").modal('hide');
+
+    });
+
+    </script>
+
+</body>
+
+</html>
